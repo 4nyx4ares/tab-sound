@@ -1,0 +1,15 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root{
+  --main-bg-color: rgb(31, 201, 232);
+  --second-bg-color: rgb(227, 242, 15);
+  --dark-color: rgb(51, 51, 48);
+}
+
+body{
+  background-color: var(--main-bg-color);
+}
