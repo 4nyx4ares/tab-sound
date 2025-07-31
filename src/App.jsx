@@ -5,7 +5,9 @@ import pads from "../public/data";
 function App() {
   const [database, setDatabase] = useState(pads);
 
-  const buttonElements = database.map((data) => <Pad {...data} />);
+  const buttonElements = database.map((data) => (
+    <Pad key={data.id} {...data} />
+  ));
 
   return (
     <main>
