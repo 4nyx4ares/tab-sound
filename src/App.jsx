@@ -1,23 +1,17 @@
-import { useState } from 'react';
+import { useState } from "react";
 import Pad from "./Pad";
-import pads from "../public/data"
-
-
+import pads from "../public/data";
 
 function App() {
   const [database, setDatabase] = useState(pads);
 
-  const buttonElements = database.map(data=>(
-    <Pad {...data} />
-  ) 
-)
+  const buttonElements = database.map((data) => <Pad {...data} />);
 
-  return(
-    <>
-      {buttonElements}
-    </>
-  )
-
+  return (
+    <main>
+      <div className="btn-container">{buttonElements}</div>
+    </main>
+  );
 }
 
-export default App
+export default App;

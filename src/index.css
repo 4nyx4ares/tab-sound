@@ -1,15 +1,28 @@
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-:root{
+:root {
   --main-bg-color: rgb(31, 201, 232);
   --second-bg-color: rgb(227, 242, 15);
   --dark-color: rgb(51, 51, 48);
 }
 
-body{
+body {
   background-color: var(--main-bg-color);
+}
+
+div .btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.pad-button {
+  width: 150px;
+  height: 15vh;
+  margin: 20px 15px;
+  border-radius: 15px;
 }
